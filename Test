@@ -1,0 +1,16 @@
+Movie m2("Heaven Is for Real", 2014, "Randall Wallace", {"Drama", "Christian"});
+m2.addReview("A beautiful and heartwarming movie that provides a glimpse into what heaven might be like. It's a reminder that there is so much more to life than what we can see and touch here on earth.");
+m2.addReview("A touching and inspiring movie that will leave you with a renewed sense of hope and faith. It's a must-see for anyone who has ever wondered what happens after we die.");
+movies.push_back(m2);
+
+Movie m3("The Passion of the Christ", 2004, "Mel Gibson", {"Drama", "Christian"});
+m3.addReview("A powerful and moving portrayal of the final hours of Jesus Christ. It's not an easy movie to watch, but it's an important one, and it really brings home the incredible sacrifice that Jesus made for us.");
+m3.addReview("An emotionally-charged movie that will leave you with a deep sense of gratitude for everything that Jesus has done for us. It's a must-see for Christians and non-Christians alike.");
+movies.push_back(m3);
+
+cout << "Christian Movies:" << endl;
+for (int i = 0; i < movies.size(); i++) {
+    movies[i].printDetails();
+}
+
+return 0;
